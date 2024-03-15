@@ -1,0 +1,44 @@
+
+<div class="container">
+  <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Materiais</title>
+    <link rel="stylesheet" href="estilos.css"> <!-- Adicione o link para o seu arquivo CSS externo -->
+  </head>
+  <body>
+   
+    <h2>Calculadora de Materiais</h2>
+    
+    <h4>adicione um nome, em
+      quantidade um determinado valor, e em</h4>
+      <h4>Valor Unitário o valor a subtrair</h4>
+    
+     <div id="mensagem" class="exemplo"></div>
+    
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Material</th>
+            <th>Quantidade</th>
+            <th>Valor Unitário</th>
+            <th>Valor Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Linhas de materiais existentes -->
+        </tbody>
+      </table>
+    </div>
+    
+    <label for="novo-material">
+      <h2>Novo Material:</h2>
+    </label>
+    <input type="text" id="novo-material" class="input-medium" placeholder="Digite o nome do material...">
+    <button onclick="adicionarMaterial()">Adicionar Material</button>
+
+    <button onclick="calcularTotais()">Calcular Totais</button>
+    <button onclick="subtrairUm()">Kit pulsão</button>
+
